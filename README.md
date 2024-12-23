@@ -23,6 +23,27 @@ pip install rasterio
 ## Dataset and Weights
 You can download the dataset and checkpoint weight from [Google Drive](https://drive.google.com/drive/folders/1ed_tF7xJs3s721WXR1uS0Nsq94p9C9nd?usp=sharing)
 
+### Data Usage
+
+This dataset is created based on data from the following sources:
+
+1. **Capella SAR Data**  
+   - Data source: "Capella SAR Dataset" by Capella Space.  
+   - Licensed under **CC BY 4.0** License: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+2. **GF-3 SAR Data**  
+   - Data source: "GF-3 SAR Dataset" by China Center for Resources Satellite Data and Application.  
+3. **Iceye SAR Data**  
+   - Data source: "Iceye SAR Dataset" by Iceye.  
+   - Licensed under **CC BY-NC 4.0** License: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+#### Modifications
+- This dataset has been processed and annotated for this project.  
+- Modifications include:
+  - **Image Cropping**: Images have been cropped to focus on relevant areas of interest.
+  - **Image Stretching**: Grayscale image pixel values have been stretched to the range **0-255** for better visualization.
+  - **Data Annotation**: Relevant features in the images have been annotated for visual grounding tasks.
+
+
 
 ## Training
 The following is an example of model training.
